@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c90c3c27b1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="app__preview">
+      <div class="app__preview-wrapper">
+        <p>برای نمایش تراکنش ها لطفاً کلیک کنید</p>
+        <button class="btn btn-secondary getBtn">نمایش تراکنش ها</button>
+      </div>
+    </div>
+    <main class="app">
+      <div class="main__header">
+        <h1>لیست تراکنش ها</h1>
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="search__input"
+            class="search__input"
+            placeholder="جستجوی تراکنش..."
+          />
+          <span class="search__icon"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+        </div>
+      </div>
+      <div class="transaction__container">
+        <div class="transaction__header">
+          <div class="transaction__header-index">ردیف</div>
+          <div class="transaction__header-type">نوع تراکنش</div>
+          <div class="transaction__header-price">
+            مبلغ
+            <span
+              ><i class="fa-solid fa-chevron-down" data-orderby="price"></i
+            ></span>
+          </div>
+          <div class="transaction__header-refID">شماره پیگیری</div>
+          <div class="transaction__header-date">
+            تاریخ سفارش
+            <span
+              ><i class="fa-solid fa-chevron-down" data-orderby="date"></i
+            ></span>
+          </div>
+        </div>
+        <div class="transaction__content">
+          <!-- <div class="transaction-item">
+            <div class="transaction-cell transaction__content-index">1</div>
+            <div
+              class="transaction-cell transaction__content-type"
+              data-type=""
+            >
+              افزایش اعتبار
+            </div>
+            <div class="transaction-cell transaction__content-price">
+              10000000
+            </div>
+            <div
+              class="transaction-cell transaction__content-refID"
+              data-ref-id=""
+            >
+              1234567890
+            </div>
+            <div class="transaction-cell transaction__content-date">
+              ۱۴۰۳/۰۲/۰۳
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
