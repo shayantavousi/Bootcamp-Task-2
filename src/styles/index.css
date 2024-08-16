@@ -146,12 +146,17 @@ html {
   border: 1.5px solid var(--color-secondary-300);
   padding: 0.2rem 1rem;
 }
+
+.search-wrapper.selected {
+  border-color: var(--color-primary-900);
+}
+
 .search__input {
   width: 100%;
   height: 100%;
   background-color: transparent;
   border: 0;
-  font-family: "vazirmatn";
+  font-family: "Vazirmatn";
 }
 
 .search__icon {

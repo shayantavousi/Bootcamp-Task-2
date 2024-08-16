@@ -8,6 +8,7 @@ const chevrons = document.querySelectorAll(".fa-chevron-down")
 const getBtn = document.querySelector(".getBtn")
 const firstPage = document.querySelector(".app__preview")
 
+
 async function getTransactions(filter = "?_sort=date&_order=desc") {
 
   try {
@@ -49,10 +50,12 @@ async function getTransactions(filter = "?_sort=date&_order=desc") {
     transactionTable.innerHTML = tableData
 
   } catch (error) {
-    console.log(error);
+    alert("تراکنشی جهت نمایش وجود ندارد")
 
   }
 }
+
+
 
 getBtn.addEventListener("click", e => {
   firstPage.classList.add("hidden");
